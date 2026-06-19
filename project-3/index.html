@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Badge Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <div class="form-panel">
+            <h2>Create profile</h2>
+
+            <form id="profileForm">
+                <div class="field">
+                    <input type="text" id="username" placeholder=" " required>
+                    <label for="username">Name</label>
+                </div>
+
+                <div class="field">
+                    <input type="number" id="age" placeholder=" " required>
+                    <label for="age">Age</label>
+                </div>
+
+                <div class="field">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+
+                <label class="dropzone" id="dropzone">
+                    <span id="fileText">Upload profile photo</span>
+                    <input type="file" id="profilepic" accept="image/*">
+                </label>
+
+                <button type="submit">Create profile</button>
+            </form>
+        </div>
+
+        <div id="badgeGallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
